@@ -1,0 +1,799 @@
+{
+    "topology": [
+        {
+            "topology-id": "example-linkstate-topology",
+            "topology-types": {
+                "odl-bgp-topology-types:bgp-linkstate-topology": {}
+            },
+            "link": [
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772164&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772165&ipv4-iface=10.4.5.4&ipv4-neigh=10.4.5.5",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.4.5.4",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.4.5.5"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772166&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772163&ipv4-iface=10.3.6.6&ipv4-neigh=10.3.6.3",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.6.6",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772166"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.6.3"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772163&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772165&ipv4-iface=10.3.5.3&ipv4-neigh=10.3.5.5",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.5.3",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.5.5"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772164&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772162&ipv4-iface=10.2.4.4&ipv4-neigh=10.2.4.2",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.4.4",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.4.2"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772162&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772163&ipv4-iface=10.2.3.2&ipv4-neigh=10.2.3.3",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.3.2",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.3.3"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772164&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772161&ipv4-iface=10.1.4.4&ipv4-neigh=10.1.4.1",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.4.4",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772161",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.4.1"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772164&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772163&ipv4-iface=10.3.4.4&ipv4-neigh=10.3.4.3",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.4.4",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.4.3"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772163&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772162&ipv4-iface=10.2.3.3&ipv4-neigh=10.2.3.2",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.3.3",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.3.2"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772162&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772161&ipv4-iface=10.1.2.2&ipv4-neigh=10.1.2.1",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.2.2",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772161",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.2.1"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772166&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772165&ipv4-iface=10.5.6.6&ipv4-neigh=10.5.6.5",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.5.6.6",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772166"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.5.6.5"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772165&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772164&ipv4-iface=10.4.5.5&ipv4-neigh=10.4.5.4",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.4.5.5",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.4.5.4"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772163&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772166&ipv4-iface=10.3.6.3&ipv4-neigh=10.3.6.6",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.6.3",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772166",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.6.6"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772165&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772166&ipv4-iface=10.5.6.5&ipv4-neigh=10.5.6.6",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.5.6.5",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772166",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.5.6.6"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772162&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772164&ipv4-iface=10.2.4.2&ipv4-neigh=10.2.4.4",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.4.2",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.4.4"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772163&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772164&ipv4-iface=10.3.4.3&ipv4-neigh=10.3.4.4",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.4.3",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.4.4"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772161&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772164&ipv4-iface=10.1.4.1&ipv4-neigh=10.1.4.4",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.4.1",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772161"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.4.4"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772165&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772163&ipv4-iface=10.3.5.5&ipv4-neigh=10.3.5.3",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.5.5",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.3.5.3"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772161&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772162&ipv4-iface=10.1.2.1&ipv4-neigh=10.1.2.2",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.2.1",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772161"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.1.2.2"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772162&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772167&ipv4-iface=10.2.7.2&ipv4-neigh=10.2.7.7",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.7.2",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772167",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.7.7"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {}
+                        }
+                    }
+                },
+                {
+                    "link-id": "bgpls://Ospf:0/type=link&local-as=100&local-domain=167772167&local-area=0&local-router=167772167&remote-as=100&remote-domain=167772167&remote-area=0&remote-router=167772162&ipv4-iface=10.2.7.7&ipv4-neigh=10.2.7.2",
+                    "source": {
+                        "source-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.7.7",
+                        "source-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772167"
+                    },
+                    "destination": {
+                        "dest-node": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162",
+                        "dest-tp": "bgpls://Ospf:0/type=tp&ipv4=10.2.7.2"
+                    },
+                    "l3-unicast-igp-topology:igp-link-attributes": {
+                        "metric": 1,
+                        "ospf-topology:ospf-link-attributes": {
+                            "ted": {
+                                "max-link-bandwidth": 12500000,
+                                "te-default-metric": 1
+                            }
+                        }
+                    }
+                }
+            ],
+            "server-provided": true,
+            "node": [
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772162",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.2.4.2",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.2.4.2"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.2.3.2",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.2.3.2"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.1.2.2",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.1.2.2"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.2.7.2",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.2.7.2"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.2.4.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.2.3.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.2.7.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.0.0.2/32",
+                                "metric": 0
+                            },
+                            {
+                                "prefix": "10.1.2.0/24",
+                                "metric": 1
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.2"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.2"
+                        ]
+                    }
+                },
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772161",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.1.2.1",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.1.2.1"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.1.4.1",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.1.4.1"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.1.4.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.1.2.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.0.0.1/32",
+                                "metric": 0
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.1"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.1"
+                        ]
+                    }
+                },
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772164",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.2.4.4",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.2.4.4"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.4.5.4",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.4.5.4"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.3.4.4",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.3.4.4"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.1.4.4",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.1.4.4"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.2.4.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.4.5.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.0.0.4/32",
+                                "metric": 0
+                            },
+                            {
+                                "prefix": "10.3.4.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.1.4.0/24",
+                                "metric": 1
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.4"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.4"
+                        ]
+                    }
+                },
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772163",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.2.3.3",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.2.3.3"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.3.4.3",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.3.4.3"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.3.6.3",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.3.6.3"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.3.5.3",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.3.5.3"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.3.5.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.2.3.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.0.0.3/32",
+                                "metric": 0
+                            },
+                            {
+                                "prefix": "10.3.4.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.3.6.0/24",
+                                "metric": 1
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.3"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.3"
+                        ]
+                    }
+                },
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772166",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.3.6.6",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.3.6.6"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.5.6.6",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.5.6.6"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.0.0.6/32",
+                                "metric": 0
+                            },
+                            {
+                                "prefix": "10.3.6.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.5.6.0/24",
+                                "metric": 1
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.6"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.6"
+                        ]
+                    }
+                },
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772165",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.5.6.5",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.5.6.5"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.4.5.5",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.4.5.5"
+                                ]
+                            }
+                        },
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.3.5.5",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.3.5.5"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.3.5.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.0.0.5/32",
+                                "metric": 0
+                            },
+                            {
+                                "prefix": "10.4.5.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.5.6.0/24",
+                                "metric": 1
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.5"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.5"
+                        ]
+                    }
+                },
+                {
+                    "node-id": "bgpls://Ospf:0/type=node&as=100&domain=167772167&area=0&router=167772167",
+                    "termination-point": [
+                        {
+                            "tp-id": "bgpls://Ospf:0/type=tp&ipv4=10.2.7.7",
+                            "l3-unicast-igp-topology:igp-termination-point-attributes": {
+                                "ip-address": [
+                                    "10.2.7.7"
+                                ]
+                            }
+                        }
+                    ],
+                    "l3-unicast-igp-topology:igp-node-attributes": {
+                        "prefix": [
+                            {
+                                "prefix": "10.2.7.0/24",
+                                "metric": 1
+                            },
+                            {
+                                "prefix": "10.0.0.7/32",
+                                "metric": 0
+                            }
+                        ],
+                        "ospf-topology:ospf-node-attributes": {
+                            "ted": {
+                                "te-router-id-ipv4": "10.0.0.7"
+                            }
+                        },
+                        "router-id": [
+                            "10.0.0.7"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
